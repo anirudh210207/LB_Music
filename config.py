@@ -22,7 +22,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 180))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "5712608345"))
+OWNER_ID = int(getenv("OWNER_ID", "1001973486113))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -77,7 +77,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/6db32c63c677905cc5cc3.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/9b82fb061f6345793802b.jpg" 
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://graph.org/file/bc7f8903e60fbfafa2eb4.jpg"
@@ -102,13 +102,13 @@ def time_to_seconds(time):
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
-if SUPPORT_CHANNEL:
+if SUPPORT_CHANNEL:"https://t.me/musucbotgojo"
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
         )
 
-if SUPPORT_CHAT:
+if SUPPORT_CHAT:"https://t.me/musucbotgojo" 
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
